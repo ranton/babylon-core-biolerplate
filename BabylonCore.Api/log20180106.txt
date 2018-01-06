@@ -1,0 +1,301 @@
+2018-01-06 08:01:16.076 +08:00 [ERR] An unhandled exception has occurred: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+FluentValidation.ValidationException: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet)
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth..ctor(DateTimeOffset value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 21
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth.Create(DateTimeOffset dateTime) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 15
+   at BabylonCore.Application.Patients.Commands.CreatePatientCommand.CreatePatientCommand.Execute(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Application\Patients\Commands\CreatePatientCommand\CreatePatientCommand.cs:line 32
+   at BabylonCore.Api.Controllers.PatientsController.CreatePatient(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Api\Controllers\PatientsController.cs:line 50
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-06 08:01:16.348 +08:00 [ERR] e8224c9f-27d2-4b71-ae1c-aedb83e387e6
+2018-01-06 08:01:16.689 +08:00 [ERR] e8224c9f-27d2-4b71-ae1c-aedb83e387e6
+2018-01-06 08:04:00.672 +08:00 [ERR] An unhandled exception has occurred: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+FluentValidation.ValidationException: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet)
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth..ctor(DateTimeOffset value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 21
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth.Create(DateTimeOffset dateTime) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 15
+   at BabylonCore.Application.Patients.Commands.CreatePatientCommand.CreatePatientCommand.Execute(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Application\Patients\Commands\CreatePatientCommand\CreatePatientCommand.cs:line 32
+   at BabylonCore.Api.Controllers.PatientsController.CreatePatient(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Api\Controllers\PatientsController.cs:line 50
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-06 08:04:00.954 +08:00 [ERR] 3916fb9c-f197-48ba-b3b1-2304b2d9214d
+2018-01-06 08:04:00.961 +08:00 [ERR] 3916fb9c-f197-48ba-b3b1-2304b2d9214d
+2018-01-06 08:04:41.732 +08:00 [ERR] An unhandled exception has occurred: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+FluentValidation.ValidationException: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet)
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth..ctor(DateTimeOffset value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 21
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth.Create(DateTimeOffset dateTime) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 15
+   at BabylonCore.Application.Patients.Commands.CreatePatientCommand.CreatePatientCommand.Execute(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Application\Patients\Commands\CreatePatientCommand\CreatePatientCommand.cs:line 32
+   at BabylonCore.Api.Controllers.PatientsController.CreatePatient(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Api\Controllers\PatientsController.cs:line 50
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-06 08:04:41.867 +08:00 [ERR] 0655862a-948b-49b1-b584-75be3c7987b0
+2018-01-06 08:04:41.870 +08:00 [ERR] 0655862a-948b-49b1-b584-75be3c7987b0
+2018-01-06 08:07:19.274 +08:00 [ERR] An unhandled exception has occurred: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+FluentValidation.ValidationException: Validation failed: 
+ -- PatientDateOfBirth should not be greater than the current time
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet)
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth..ctor(DateTimeOffset value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 21
+   at BabylonCore.Domain.Patients.ValueObjects.PatientDateOfBirth.PatientDateOfBirth.Create(DateTimeOffset dateTime) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientDateOfBirth\PatientDateOfBirth.cs:line 15
+   at BabylonCore.Application.Patients.Commands.CreatePatientCommand.CreatePatientCommand.Execute(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Application\Patients\Commands\CreatePatientCommand\CreatePatientCommand.cs:line 32
+   at BabylonCore.Api.Controllers.PatientsController.CreatePatient(CreatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Api\Controllers\PatientsController.cs:line 50
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-06 08:07:19.771 +08:00 [ERR] 12371694-4bd2-4b6e-a89b-58ae0e20f815
+2018-01-06 08:07:19.779 +08:00 [ERR] 12371694-4bd2-4b6e-a89b-58ae0e20f815
+2018-01-06 09:25:22.632 +08:00 [ERR] An unhandled exception has occurred: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[BabylonCore.Persistence.Patients.PatientDb, BabylonCore.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[BabylonCore.Domain.Patients.Patient, BabylonCore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[BabylonCore.Persistence.Patients.PatientDb, BabylonCore.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[BabylonCore.Domain.Patients.Patient, BabylonCore.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> FluentValidation.ValidationException: Validation failed: 
+ -- Sex must be male or female only
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet)
+   at BabylonCore.Domain.Patients.ValueObjects.PatientSex.PatientSex..ctor(String value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientSex\PatientSex.cs:line 12
+   at BabylonCore.Domain.Patients.ValueObjects.PatientSex.PatientSex.Create(String value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientSex\PatientSex.cs:line 17
+   at BabylonCore.Domain.Patients.ValueObjects.PatientSex.PatientSex.op_Explicit(String sex) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientSex\PatientSex.cs:line 20
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at BabylonCore.Persistence.Patients.PatientRepository.GetByFilter(KeyValuePair`2[] criteria) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Persistence\Patients\PatientRepository.cs:line 63
+   at BabylonCore.Application.Patients.Queries.GetPatientListQuery.GetPatientListQuery.Execute() in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Application\Patients\Queries\GetPatientListQuery\GetPatientListQuery.cs:line 20
+   at BabylonCore.Api.Controllers.PatientsController.GetList() in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Api\Controllers\PatientsController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-06 09:25:22.840 +08:00 [ERR] 943f431c-802f-465d-9349-3420d578b144
+2018-01-06 09:25:22.848 +08:00 [ERR] 943f431c-802f-465d-9349-3420d578b144
+2018-01-06 09:28:22.947 +08:00 [ERR] An unhandled exception has occurred: Validation failed: 
+ -- Sex must be male or female only
+FluentValidation.ValidationException: Validation failed: 
+ -- Sex must be male or female only
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet)
+   at BabylonCore.Domain.Patients.ValueObjects.PatientSex.PatientSex..ctor(String value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientSex\PatientSex.cs:line 12
+   at BabylonCore.Domain.Patients.ValueObjects.PatientSex.PatientSex.Create(String value) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Domain\Patients\ValueObjects\PatientSex\PatientSex.cs:line 17
+   at BabylonCore.Application.Patients.Commands.UpdatePatientCommand.UpdatePatientCommand.Execute(UpdatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Application\Patients\Commands\UpdatePatientCommand\UpdatePatientCommand.cs:line 30
+   at BabylonCore.Api.Controllers.PatientsController.UpdatePatient(String id, UpdatePatientModel model) in C:\Users\RANTONWINDEVBOX\source\repos\BabylonCoreBiolerplate\BabylonCore.Api\Controllers\PatientsController.cs:line 59
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>d__6.MoveNext()
+2018-01-06 09:28:22.983 +08:00 [ERR] b3c350c1-cd99-4253-9581-c3d95dd4998e
+2018-01-06 09:28:22.984 +08:00 [ERR] b3c350c1-cd99-4253-9581-c3d95dd4998e
